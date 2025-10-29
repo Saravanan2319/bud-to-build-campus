@@ -8,9 +8,9 @@ export const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <img src={logo} alt="Bud 2 Build" className="h-10 w-10" />
-              <span className="text-xl font-bold text-gradient">Bud 2 Build</span>
+            <div className="flex items-center space-x-3 animate-fade-in">
+              <img src={logo} alt="Bug 2 Build" className="h-10 w-10 hover-scale" />
+              <span className="text-xl font-bold text-gradient">Bug 2 Build</span>
             </div>
             <p className="text-sm text-muted-foreground">
               From Idea to Innovation — Your trusted partner in academic excellence.
@@ -130,7 +130,7 @@ export const Footer = () => {
         </div>
 
         <div className="mt-12 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Bud 2 Build. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Bug 2 Build. All rights reserved.</p>
         </div>
       </div>
     </footer>

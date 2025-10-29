@@ -97,7 +97,7 @@ export default function Services() {
   return (
     <main className="py-20">
       <div className="container mx-auto px-4">
-        <div className="mb-16 text-center">
+        <div className="mb-16 text-center animate-fade-in">
           <h1 className="mb-4 text-4xl font-bold md:text-5xl">
             Our <span className="text-gradient">Services</span>
           </h1>
@@ -111,7 +111,8 @@ export default function Services() {
           {services.map((service, index) => (
             <Card 
               key={index}
-              className="overflow-hidden transition-all hover:shadow-lg"
+              className="overflow-hidden transition-all hover:shadow-lg animate-scale-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader className="bg-muted/50">
                 <div className="flex items-start gap-4">
@@ -158,7 +159,7 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-16 text-center animate-fade-in">
           <Card className="mx-auto max-w-2xl gradient-primary text-white">
             <CardHeader>
               <CardTitle className="text-2xl text-white">Ready to Start Your Project?</CardTitle>
@@ -168,7 +169,7 @@ export default function Services() {
             </CardHeader>
             <CardContent>
               <Link to="/contact">
-                <Button size="lg" variant="secondary" className="shadow-lg">
+                <Button size="lg" variant="secondary" className="shadow-lg hover-scale">
                   Get in Touch
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>

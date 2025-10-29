@@ -57,7 +57,7 @@ export default function Portfolio() {
   return (
     <main className="py-20">
       <div className="container mx-auto px-4">
-        <div className="mb-16 text-center">
+        <div className="mb-16 text-center animate-fade-in">
           <h1 className="mb-4 text-4xl font-bold md:text-5xl">
             Our <span className="text-gradient">Portfolio</span>
           </h1>
@@ -70,7 +70,8 @@ export default function Portfolio() {
           {projects.map((project, index) => (
             <Card 
               key={index}
-              className="group transition-all hover:shadow-xl hover:-translate-y-2"
+              className="group transition-all hover:shadow-xl hover:-translate-y-2 animate-scale-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
                 <div className="mb-4 flex items-center justify-between">
@@ -106,7 +107,7 @@ export default function Portfolio() {
           ))}
         </div>
 
-        <div className="mt-16">
+        <div className="mt-16 animate-fade-in">
           <Card className="mx-auto max-w-3xl text-center gradient-secondary text-white">
             <CardHeader>
               <CardTitle className="text-2xl text-white">

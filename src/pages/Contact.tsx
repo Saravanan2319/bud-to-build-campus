@@ -74,7 +74,7 @@ export default function Contact() {
   return (
     <main className="py-20">
       <div className="container mx-auto px-4">
-        <div className="mb-16 text-center">
+        <div className="mb-16 text-center animate-fade-in">
           <h1 className="mb-4 text-4xl font-bold md:text-5xl">
             Get in <span className="text-gradient">Touch</span>
           </h1>
@@ -85,7 +85,7 @@ export default function Contact() {
 
         <div className="grid gap-8 lg:grid-cols-3">
           {/* Contact Information */}
-          <div className="space-y-6">
+          <div className="space-y-6 animate-fade-in">
             <Card>
               <CardHeader>
                 <CardTitle>Contact Information</CardTitle>
@@ -148,7 +148,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <Card>
               <CardHeader>
                 <CardTitle>Send Us a Message</CardTitle>
@@ -241,7 +241,7 @@ export default function Contact() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full gradient-primary text-white"
+                    className="w-full gradient-primary text-white hover-scale"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}

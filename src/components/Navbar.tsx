@@ -23,9 +23,9 @@ export const Navbar = () => {
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="Bud 2 Build" className="h-10 w-10" />
-            <span className="text-xl font-bold text-gradient">Bud 2 Build</span>
+          <Link to="/" className="flex items-center space-x-3 group">
+            <img src={logo} alt="Bug 2 Build" className="h-10 w-10 hover-scale" />
+            <span className="text-xl font-bold text-gradient">Bug 2 Build</span>
           </Link>
 
           {/* Desktop Navigation */}

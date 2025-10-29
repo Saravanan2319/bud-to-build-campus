@@ -42,9 +42,9 @@ export default function About() {
     <main className="py-20">
       <div className="container mx-auto px-4">
         {/* Hero Section */}
-        <div className="mb-16 text-center">
+        <div className="mb-16 text-center animate-fade-in">
           <h1 className="mb-4 text-4xl font-bold md:text-5xl">
-            About <span className="text-gradient">Bud 2 Build</span>
+            About <span className="text-gradient">Bug 2 Build</span>
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
             Your trusted partner in academic excellence and innovation
@@ -53,10 +53,10 @@ export default function About() {
 
         {/* Introduction */}
         <div className="mb-20">
-          <Card className="mx-auto max-w-4xl">
+          <Card className="mx-auto max-w-4xl animate-scale-in">
             <CardContent className="prose prose-lg dark:prose-invert max-w-none p-8">
               <p className="text-center text-lg leading-relaxed text-muted-foreground">
-                Bud 2 Build was founded with a simple yet powerful vision: to help college students 
+                Bug 2 Build was founded with a simple yet powerful vision: to help college students 
                 transform their academic ideas into real, working solutions. We understand the challenges 
                 students face when working on final year and academic projects — from concept development 
                 to technical implementation. That's why we offer comprehensive, end-to-end guidance across 
@@ -67,13 +67,13 @@ export default function About() {
         </div>
 
         {/* Mission, Vision, Commitment */}
-        <div className="mb-20">
+        <div className="mb-20 animate-fade-in">
           <h2 className="mb-12 text-center text-3xl font-bold">
             Our <span className="text-gradient">Core Values</span>
           </h2>
           <div className="grid gap-6 md:grid-cols-3">
             {values.map((value, index) => (
-              <Card key={index} className="text-center transition-all hover:shadow-lg">
+              <Card key={index} className="text-center transition-all hover:shadow-lg animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardHeader>
                   <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                     <value.icon className="h-8 w-8 text-primary" />
@@ -89,7 +89,7 @@ export default function About() {
         </div>
 
         {/* Principles */}
-        <div className="mb-20">
+        <div className="mb-20 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <h2 className="mb-12 text-center text-3xl font-bold">
             What Drives <span className="text-gradient">Us</span>
           </h2>
@@ -97,7 +97,8 @@ export default function About() {
             {principles.map((principle, index) => (
               <Card 
                 key={index} 
-                className="group transition-all hover:shadow-lg hover:-translate-y-1"
+                className="group transition-all hover:shadow-lg hover:-translate-y-1 animate-scale-in"
+                style={{ animationDelay: `${(index + 2) * 0.1}s` }}
               >
                 <CardHeader>
                   <principle.icon className="mb-3 h-12 w-12 text-primary group-hover:scale-110 transition-transform" />
@@ -112,7 +113,7 @@ export default function About() {
         </div>
 
         {/* Who We Help */}
-        <div>
+        <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <Card className="gradient-primary text-white">
             <CardHeader>
               <CardTitle className="text-center text-3xl text-white">
